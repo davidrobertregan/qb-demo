@@ -1,14 +1,43 @@
+* {
+  font-family: "Avenir Next";
+}
+
 .national-parks {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 .national-parks__card {
   border: 1px black solid;
-  max-width: 250px;
+  margin: 15px;
+  flex-basis: 20%;
+}
+.national-parks .card__banner div {
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.national-parks .card__banner--rocks {
+  background: lightblue;
+}
+.national-parks .card__banner--nature {
+  background: lightgreen;
+}
+.national-parks .card__banner--wilderness {
+  background: lightgoldenrodyellow;
 }
 .national-parks .card__image {
   max-width: 100%;
+}
+.national-parks .card__title {
+  margin: 5px 15px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.national-parks .card__body {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -9,14 +9,21 @@ const createCard = (p) => {
     card.className = "national-parks__card"
 
     const banner = document.createElement('div')
-    banner.textContent = p.parktype
-    banner.className = "card__banner"
+    const bannerText = document.createElement('div')
+    bannerText.textContent = p.parktype
+    banner.classList.add("card__banner", `card__banner--${p.parktype}`)
+    banner.appendChild(bannerText)
     card.appendChild(banner)
 
     const img = document.createElement('img')
     img.src = p.image
     img.className = "card__image"
     card.appendChild(img)
+
+    const title = document.createElement('div')
+    title.textContent = p.title
+    title.className = "card__title"
+    card.appendChild(title)
 
     const bodyText = document.createElement('div')
     bodyText.textContent = p.body
