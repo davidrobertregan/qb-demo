@@ -1,0 +1,14 @@
+.national-parks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.national-parks__card {
+  border: 1px black solid;
+  max-width: 250px;
+}
+.national-parks .card__image {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */
