@@ -30,9 +30,12 @@ const createCard = (p) => {
     bodyText.className = "card__body"
     card.appendChild(bodyText)
 
-    const cta = document.createElement('a')
-    cta.href = p.link
+    const cta = document.createElement('button')
+    const a = document.createElement('a')
+    a.href = p.link
+    a.textContent = "Find Out More"
     cta.className = 'card__cta'
+    cta.appendChild(a)
     card.appendChild(cta)
 
     return card
